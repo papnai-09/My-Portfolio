@@ -361,7 +361,7 @@ export default function App() {
 
       {/* Resume Section */}
       <section id="resume" className="portfolio-section">
-        <h2 className="sawad-section-title">Interactive <span>Resume</span></h2>
+        <h2 className="sawad-section-title"><span>Resume</span></h2>
         <ResumeBox2D isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       </section>
 
