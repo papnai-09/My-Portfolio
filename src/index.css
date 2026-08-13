@@ -464,6 +464,22 @@ body {
   width: 100%;
 }
 
+/* Interactive Cards Cursor Pointer */
+.sawad-project-card,
+.sawad-project-card *,
+.sawad-service-card,
+.sawad-service-card *,
+.timeline-row,
+.timeline-row *,
+.interest-card,
+.interest-card *,
+.skill-tab-card,
+.skill-tab-card *,
+.resume-box-container,
+.resume-box-container * {
+  cursor: pointer;
+}
+
 .sawad-project-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
