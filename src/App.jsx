@@ -68,6 +68,23 @@ export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Click-to-open states for cards
+  const [openService, setOpenService] = useState(null);
+  const [openEdu, setOpenEdu] = useState(null);
+  const [openInterest, setOpenInterest] = useState(null);
+
+  const toggleService = (idx) => {
+    setOpenService(openService === idx ? null : idx);
+  };
+
+  const toggleEdu = (idx) => {
+    setOpenEdu(openEdu === idx ? null : idx);
+  };
+
+  const toggleInterest = (idx) => {
+    setOpenInterest(openInterest === idx ? null : idx);
+  };
+
   // Typewriter effect state & logic
   const words = ["Gaurav Papnai", "Frontend Developer"];
   const [typewriterText, setTypewriterText] = useState("");
@@ -163,7 +180,13 @@ export default function App() {
       <section id="services" className="portfolio-section">
         <h2 className="sawad-section-title">My <span>Services</span></h2>
         <div className="sawad-services-grid">
-          <div className="sawad-service-card">
+          <div 
+            className={`sawad-service-card ${openService === 0 ? 'active-open' : ''}`}
+            onClick={() => toggleService(0)}
+            role="button"
+            tabIndex={0}
+            aria-expanded={openService === 0}
+          >
             <div className="service-icon">
               <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -178,7 +201,13 @@ export default function App() {
             <span className="service-pill">React & Next</span>
           </div>
 
-          <div className="sawad-service-card">
+          <div 
+            className={`sawad-service-card ${openService === 1 ? 'active-open' : ''}`}
+            onClick={() => toggleService(1)}
+            role="button"
+            tabIndex={0}
+            aria-expanded={openService === 1}
+          >
             <div className="service-icon" style={{ color: 'var(--accent-orange)' }}>
               <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none">
                 <path d="M12 18h.01"></path>
@@ -192,7 +221,13 @@ export default function App() {
             <span className="service-pill orange">Tailwind & CSS3</span>
           </div>
 
-          <div className="sawad-service-card">
+          <div 
+            className={`sawad-service-card ${openService === 2 ? 'active-open' : ''}`}
+            onClick={() => toggleService(2)}
+            role="button"
+            tabIndex={0}
+            aria-expanded={openService === 2}
+          >
             <div className="service-icon">
               <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none">
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
@@ -224,7 +259,12 @@ export default function App() {
           <div className="timeline-center-line"></div>
 
           {/* Row 1 (B.Tech) - Left text, Right photo */}
-          <div className="timeline-row row-left">
+          <div 
+            className={`timeline-row row-left ${openEdu === 0 ? 'active-open' : ''}`}
+            onClick={() => toggleEdu(0)}
+            role="button"
+            tabIndex={0}
+          >
             <div className="timeline-side-content text-side">
               <div className="education-details-card">
                 <span className="edu-time">2022 - 2026</span>
@@ -249,7 +289,12 @@ export default function App() {
           </div>
 
           {/* Row 2 (Class XII) - Left photo, Right text */}
-          <div className="timeline-row row-right">
+          <div 
+            className={`timeline-row row-right ${openEdu === 1 ? 'active-open' : ''}`}
+            onClick={() => toggleEdu(1)}
+            role="button"
+            tabIndex={0}
+          >
             <div className="timeline-side-content photo-side">
               <div className="edu-timeline-photo-wrapper">
                 <img src="/school_photo.jpg" alt="M.P. Hindu Inter College" className="edu-timeline-photo" />
@@ -274,7 +319,12 @@ export default function App() {
           </div>
 
           {/* Row 3 (Class X) - Left text, Right photo */}
-          <div className="timeline-row row-left">
+          <div 
+            className={`timeline-row row-left ${openEdu === 2 ? 'active-open' : ''}`}
+            onClick={() => toggleEdu(2)}
+            role="button"
+            tabIndex={0}
+          >
             <div className="timeline-side-content text-side">
               <div className="education-details-card">
                 <span className="edu-time">2019 - 2020</span>
@@ -304,7 +354,12 @@ export default function App() {
       <section id="interests" className="portfolio-section">
         <h2 className="sawad-section-title">My <span>Interests</span></h2>
         <div className="sawad-interests-grid">
-          <div className="interest-card">
+          <div 
+            className={`interest-card ${openInterest === 0 ? 'active-open' : ''}`}
+            onClick={() => toggleInterest(0)}
+            role="button"
+            tabIndex={0}
+          >
             <div className="interest-icon">
               {/* Cricket Ball custom icon */}
               <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none">
@@ -317,7 +372,12 @@ export default function App() {
             <p className="interest-desc">Enthusiastically following matches, analyzing team statistics, and supporting team India during major tournaments.</p>
           </div>
 
-          <div className="interest-card">
+          <div 
+            className={`interest-card ${openInterest === 1 ? 'active-open' : ''}`}
+            onClick={() => toggleInterest(1)}
+            role="button"
+            tabIndex={0}
+          >
             <div className="interest-icon" style={{ color: 'var(--accent-orange)' }}>
               {/* Music Note custom icon */}
               <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none">
@@ -330,7 +390,12 @@ export default function App() {
             <p className="interest-desc">Tuning into diverse genres and artist playlists to relax, focus, and find creative coding inspiration.</p>
           </div>
 
-          <div className="interest-card">
+          <div 
+            className={`interest-card ${openInterest === 2 ? 'active-open' : ''}`}
+            onClick={() => toggleInterest(2)}
+            role="button"
+            tabIndex={0}
+          >
             <div className="interest-icon">
               {/* Camera custom icon */}
               <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none">
@@ -342,7 +407,12 @@ export default function App() {
             <p className="interest-desc">Exploring outdoor trails, chasing natural lighting, and capturing aesthetic visual moments of landscapes and surroundings through the lens.</p>
           </div>
 
-          <div className="interest-card">
+          <div 
+            className={`interest-card ${openInterest === 3 ? 'active-open' : ''}`}
+            onClick={() => toggleInterest(3)}
+            role="button"
+            tabIndex={0}
+          >
             <div className="interest-icon" style={{ color: 'var(--accent-orange)' }}>
               {/* Sports Trophy custom icon */}
               <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none">
