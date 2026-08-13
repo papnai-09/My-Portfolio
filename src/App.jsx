@@ -582,6 +582,21 @@ export default function App() {
                   <li>Integrated REST APIs and optimized application performance with reusable components.</li>
                 </ul>
               </div>
+
+              <div className="resume-item" style={{ marginTop: '1rem' }}>
+                <div className="resume-item-header">
+                  <span>Weather Analytics — NASA-Inspired Weather Dashboard</span>
+                  <span style={{ color: 'var(--accent)' }}>JavaScript / APIs</span>
+                </div>
+                <div className="resume-item-sub">
+                  <span>Tech Stack: HTML5, CSS3, JavaScript, OpenWeatherMap API, Leaflet.js</span>
+                </div>
+                <ul className="resume-desc-list">
+                  <li>Built a NASA-inspired weather forecasting dashboard with real-time data & analytics.</li>
+                  <li>Integrated Leaflet.js interactive maps and OpenWeatherMap API for 5-day forecasts.</li>
+                  <li>Implemented responsive design and dynamic visual charts for atmospheric metrics.</li>
+                </ul>
+              </div>
             </div>
 
             <div className="resume-section">

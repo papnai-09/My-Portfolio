@@ -36,6 +36,15 @@ const projectsList = [
     liveUrl: 'https://mission-10-eight.vercel.app/',
     githubUrl: 'https://github.com/papnai-09/shop-hub',
     accentColor: '#f47c4a'
+  },
+  {
+    title: 'Weather Analytics',
+    subtitle: 'NASA-Inspired Weather Dashboard',
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'OpenWeatherMap API', 'Leaflet.js'],
+    desc: 'NASA-inspired weather forecasting dashboard built with HTML, CSS, and JavaScript, featuring real-time weather data, interactive maps, 5-day forecasts, and weather analytics.',
+    liveUrl: 'https://will-it-rain-on-my-parade.netlify.app/',
+    githubUrl: 'https://github.com/papnai-09/weather-app',
+    accentColor: '#ff7f7f'
   }
 ];
 
