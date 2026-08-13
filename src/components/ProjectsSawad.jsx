@@ -6,8 +6,8 @@ const projectsList = [
     subtitle: 'Movie Discovery Platform',
     tech: ['Next.js', 'React.js', 'Tailwind CSS', 'TMDB API'],
     desc: 'Developed a responsive movie discovery platform using Next.js and React.js. Integrated TMDB REST API for real-time movie search, details, watchlists, and casting details.',
-    liveUrl: 'https://github.com/papnai-09/CineStream',
-    githubUrl: 'https://github.com/papnai-09/CineStream',
+    liveUrl: 'https://cine-stream-next-lac.vercel.app/',
+    githubUrl: 'https://github.com/papnai-09/cine-stream-next',
     accentColor: '#ff7f7f'
   },
   {
@@ -15,26 +15,26 @@ const projectsList = [
     subtitle: 'Kanban Task Board',
     tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Zustand'],
     desc: 'Developed a Kanban-style task management application using React.js. Implemented CRUD operations, drag-and-drop column workflows, and persistent global state management with Zustand.',
-    liveUrl: 'https://github.com/papnai-09/TaskFlow',
-    githubUrl: 'https://github.com/papnai-09/TaskFlow',
+    liveUrl: 'https://kanban-task-board-lake.vercel.app/',
+    githubUrl: 'https://github.com/papnai-09/kanban-task-board/tree/main/kanban-board',
     accentColor: '#f47c4a'
   },
   {
-    title: 'Health Companion',
-    subtitle: 'Healthcare Monitor',
+    title: 'Medicare AI',
+    subtitle: 'Healthcare Platform',
     tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'REST API'],
     desc: 'Frontend dashboard interface for healthcare management. Built responsive UI components, dynamic graph charts for vitals tracking, and appointment booking forms.',
-    liveUrl: 'https://github.com/papnai-09',
-    githubUrl: 'https://github.com/papnai-09',
+    liveUrl: 'https://medicare-ai-alpha.vercel.app/',
+    githubUrl: 'https://github.com/papnai-09/health-care',
     accentColor: '#ff7f7f'
   },
   {
-    title: 'ShopEase',
+    title: 'ShopHub',
     subtitle: 'E-Commerce Storefront',
     tech: ['React.js', 'Tailwind CSS', 'Web API', 'Local Storage'],
     desc: 'Developed a responsive e-commerce storefront layout featuring real-time product catalogs, instant category filtering, interactive shopping cart, and checkout validations.',
-    liveUrl: 'https://github.com/papnai-09',
-    githubUrl: 'https://github.com/papnai-09',
+    liveUrl: 'https://mission-10-eight.vercel.app/',
+    githubUrl: 'https://github.com/papnai-09/shop-hub',
     accentColor: '#f47c4a'
   }
 ];
@@ -81,7 +81,8 @@ export default function ProjectsSawad() {
                 rel="noreferrer" 
                 className="sawad-arrow-link"
                 style={{ '--accent': project.accentColor }}
-                aria-label={`View ${project.title}`}
+                aria-label={`View live ${project.title}`}
+                title={`View live ${project.title}`}
               >
                 <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.5" fill="none">
                   <line x1="7" y1="17" x2="17" y2="7"></line>

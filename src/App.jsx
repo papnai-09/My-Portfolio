@@ -555,7 +555,7 @@ export default function App() {
 
               <div className="resume-item" style={{ marginTop: '1rem' }}>
                 <div className="resume-item-header">
-                  <span>Health Companion — Healthcare Management Interface</span>
+                  <span>Medicare AI — Healthcare Management Platform</span>
                   <span style={{ color: 'var(--accent)' }}>React.js</span>
                 </div>
                 <div className="resume-item-sub">
@@ -570,7 +570,7 @@ export default function App() {
 
               <div className="resume-item" style={{ marginTop: '1rem' }}>
                 <div className="resume-item-header">
-                  <span>ShopEase — E-Commerce Frontend</span>
+                  <span>ShopHub — E-Commerce Frontend</span>
                   <span style={{ color: 'var(--accent)' }}>React.js</span>
                 </div>
                 <div className="resume-item-sub">
